@@ -12,7 +12,7 @@ public class Solution {
 	public static void main(String[] args) throws IOException {
 		List<List<Integer>> tri = new ArrayList<>();
 		try {
-	        FileReader reader = new FileReader("src/triangle.txt");
+	        FileReader reader = new FileReader("bin/Triangle/triangle.txt");
 	        BufferedReader br = new BufferedReader(reader);
 	        String line = br.readLine();
 	        while (line != null) {
