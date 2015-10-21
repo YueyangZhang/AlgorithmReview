@@ -2,7 +2,16 @@ package BucketSort;
 
 import java.util.Random;
 
-public class bucketSort {
+/**
+ * 
+ * @author Yueyang Zhang
+ * Time Complexity: O(n + k)
+ * n is the number of numbers
+ * k is the number of buckets
+ */
+
+public class BucketSort {
+	
 	static int[] bucketSort(int[] nums) {
 		if (nums == null || nums.length <= 1) {
 			return nums;
