@@ -40,7 +40,7 @@ public class Solution {
 					node = stack.pop();
 				} 
 				node.right = new TreeNode(String.valueOf(sc[i + 1]));
-				stack.push(node);
+				//stack.push(node);
 				node = node.right;
 			}
 		}
@@ -88,7 +88,8 @@ public class Solution {
 	
 	
 	public static void main(String[] args) {
-		String s = "a?b?c:d?e:f:g";
+		//String s = "a?b?c:d?e:f:g";
+		String s = "a?b:c?d?e:f:g";
 		Solution r = new Solution();
 		TreeNode result = r.convert(s);
 		Queue<TreeNode> queue = new LinkedList<>();
