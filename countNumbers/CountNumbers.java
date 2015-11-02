@@ -2,8 +2,8 @@ package countNumbers;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
+import java.util.Iterator;
 import java.util.Set;
 
 public class CountNumbers {
@@ -28,21 +28,21 @@ public class CountNumbers {
 			map.put(num, temp);
 		}
 		
-//		Set<Integer> set = map.keySet();
-//		for (int i = 0; i < b.length; i++) {
-//			Iterator<Integer> it = set.iterator();
-//			while (it.hasNext()) {
-//				int key = it.next();
-//				int value = map.get(key);
-//				if (value == b[i]) {
-//					c[i] = key;
-//					set.remove(key);
-//					break;
-//				}
-//			}
-//		}
+		Set<Integer> set = map.keySet();
+		for (int i = 0; i < b.length; i++) {
+			Iterator<Integer> it = set.iterator();
+			while (it.hasNext()) {
+				int key = it.next();
+				int value = map.get(key);
+				if (value == b[i]) {
+					c[i] = key;
+					set.remove(key);
+					break;
+				}
+			}
+		}
 		
-		Map<Integer, ArrayList<Integer>> newMap = HashMap<>
+		//Map<Integer, ArrayList<Integer>> newMap = HashMap<>
 		
 		return c;
 	}
