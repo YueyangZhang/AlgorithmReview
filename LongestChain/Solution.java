@@ -1,4 +1,4 @@
-package LongestChain;
+package longestChain;
 
 import java.util.HashMap;
 import java.util.Set;

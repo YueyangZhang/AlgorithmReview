@@ -1,4 +1,4 @@
-package LengthOfLastWord;
+package lengthOfLastWord;
 
 public class LengthOfLastWord {
 	public static void main(String[] args) {

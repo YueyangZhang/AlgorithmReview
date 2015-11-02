@@ -1,4 +1,4 @@
-package LengthOfLastWord;
+package lengthOfLastWord;
 
 public class Solution {
 	public int lengthOfLastWord(String s) {
