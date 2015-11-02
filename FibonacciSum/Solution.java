@@ -1,4 +1,4 @@
-package FibonacciSum;
+package fibonacciSum;
 
 import java.util.ArrayList;
 import java.util.HashSet;

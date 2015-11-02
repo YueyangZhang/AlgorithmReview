@@ -1,4 +1,4 @@
-package KLargest;
+package kLargest;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package FibonacciSum;
+package fibonacciSum;
 
 public class Result {
 	public static void main(String[] args) {
