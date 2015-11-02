@@ -24,22 +24,27 @@ public class Solution {
 			
 		}
 		
+		// only check ? and :
 		Stack<TreeNode> stack = new Stack<>();
 		int i = 1;
 		while (i < n) {
 			if(i < n && s.charAt(i) == '?') {
+				// ? means a new top and push it to stack
 				TreeNode now = map.get(i - 1);
 				if (i - 2 > -1 && s.charAt(i - 2) != ':') {
+					// this top is the left child of its parent
 					stack.peek().left = now;
 				}
 				
 				stack.push(now);
 				i += 2;	
 			} else if (i < n && s.charAt(i) == ':') {
+				//: means the char after it must be a right child
 				TreeNode top = stack.pop();
 				TreeNode right = map.get(i + 1);
 				top.right = right;
 				if (i - 2 > -1 && s.charAt(i - 2) != ':') {
+					// we know this part exactly, so we can connect them
 					TreeNode left = map.get(i - 1);
 					top.left = left;
 				}
