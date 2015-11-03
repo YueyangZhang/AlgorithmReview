@@ -35,7 +35,10 @@ public class Solution {
 				node = node.left;
 			} else if (sc[i] == ':') {
 				// the one after : is always a right child
-				node = stack.pop();
+				if (!stack.isEmpty()) {
+					node = stack.pop();
+				}
+				
 				while (node.right != null) {
 					node = stack.pop();
 				} 
@@ -89,7 +92,7 @@ public class Solution {
 	
 	public static void main(String[] args) {
 		//String s = "a?b?c:d?e:f:g";
-		String s = "a?b:c?d?e:f:g";
+		String s = "a?b:c?d?e:f:g:h";
 		Solution r = new Solution();
 		TreeNode result = r.convert(s);
 		Queue<TreeNode> queue = new LinkedList<>();
