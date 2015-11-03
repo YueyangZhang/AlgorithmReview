@@ -1,4 +1,4 @@
-package Median;
+package median;
 
 public class Solution {
     

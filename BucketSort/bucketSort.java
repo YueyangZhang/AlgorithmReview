@@ -1,4 +1,4 @@
-package BucketSort;
+package bucketSort;
 
 import java.util.Random;
 
